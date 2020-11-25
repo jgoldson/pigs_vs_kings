@@ -11,15 +11,22 @@ public class Player : MonoBehaviour
     [SerializeField] float horizontalJumpModifier = -2f;
     [SerializeField] Vector2 deathKick = new Vector2(10f, 10f);
     [SerializeField] float spawnTimer = 3f;
+    [SerializeField] GameObject crown;
+    [SerializeField] float crateThrowSpeed = 10f;
+    float playerDirection = 1;
+
 
     //State
     bool isAlive = true;
+    bool hasCrate = false;
+    bool canPickUp = false;
     
     //Cached References
     Rigidbody2D myRigidBody;
     Animator myAnimator;
     CapsuleCollider2D myBodyCollider;
     BoxCollider2D myFeet;
+    GameObject crate;
 
     void Start()
     {
@@ -37,6 +44,8 @@ public class Player : MonoBehaviour
         FlipSprite();
         Jump();
         Die();
+        TryToThrowCrate();
+        PickUpObject();
     }
 
     private void Run() {
@@ -47,7 +56,8 @@ public class Player : MonoBehaviour
     private void FlipSprite() {
         bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
         if (playerHasHorizontalSpeed) {
-            transform.localScale = new Vector2 (Mathf.Sign(myRigidBody.velocity.x), 1f);
+            playerDirection = Mathf.Sign(myRigidBody.velocity.x);
+            gameObject.transform.localScale = new Vector2 (playerDirection, 1f); 
         }
         myAnimator.SetBool("Running", playerHasHorizontalSpeed);
     }
@@ -77,5 +87,47 @@ public class Player : MonoBehaviour
         myRigidBody.velocity = new Vector2(0f, 0f);
         myAnimator.SetTrigger("GoThroughDoor");
         isAlive = false;
+    }
+
+    private void PickUpObject(){
+        if (!canPickUp) {return;}
+        if (CrossPlatformInputManager.GetButtonDown("Fire1")){
+            hasCrate = true;
+            GetComponent<Animator>().SetTrigger("PickUpCrate");
+            crate.SetActive(false);
+         }
+         
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.CompareTag("Crate")){
+            crate = other.gameObject;
+            canPickUp = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other) {
+        if (other.CompareTag("Crate")) {
+            canPickUp = false;
+        }
+    }
+
+    private void TryToThrowCrate(){
+        if (!hasCrate) { return;}
+        if (CrossPlatformInputManager.GetButtonDown("Fire3")) {
+            StartCoroutine(ThrowCrate());
+        }
+    }
+    IEnumerator ThrowCrate() {
+        yield return new WaitForSeconds(0.1f);
+        GetComponent<Animator>().SetTrigger("ThrowCrate");
+            GameObject newCrate = Instantiate(
+            crate, crown.transform.position, transform.rotation) as GameObject;
+            newCrate.SetActive(true);
+            
+            newCrate.GetComponent<Rigidbody2D>().velocity = 
+                new Vector2(myRigidBody.velocity.x + (crateThrowSpeed * playerDirection),
+                myRigidBody.velocity.y + crateThrowSpeed);
+            Destroy(crate);
+            hasCrate = false;
     }
 }

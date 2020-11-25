@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Shootable
+  - Crate
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -21,8 +23,8 @@ TagManager:
   - Enemy
   - Hazards
   - Interactables
-  - 
-  - 
+  - Pickupable
+  - EnemyInteractable
   - 
   - 
   - 
@@ -62,4 +64,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1088375863
+    locked: 0
+  - name: Pickupable
+    uniqueID: 1925380479
     locked: 0

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{11cddde1-0a7e-da5f-26bf-c84e8de927e2}</ProjectGuid>
+    <ProjectGuid>{d494c1a1-2359-7ae4-8a07-13a2f4ef3582}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -36,9 +36,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Box.cs" />
      <Compile Include="Assets\Scripts\Cannon.cs" />
      <Compile Include="Assets\Scripts\CannonBall.cs" />
      <Compile Include="Assets\Scripts\EnemyMovement.cs" />
+     <Compile Include="Assets\Scripts\EnemyPigWithCrate.cs" />
      <Compile Include="Assets\Scripts\FireToggleLever.cs" />
      <Compile Include="Assets\Scripts\FireTrap.cs" />
      <Compile Include="Assets\Scripts\GameSession.cs" />
@@ -587,81 +589,81 @@
         <HintPath>D:/Unity/2019.4.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Extras.Editor">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Extras">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/TileVania/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>C:/Users/forjr/OneDrive/Desktop/Repos/Unity2D/Pigs_vs_Kings/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{32754546-6785-29f5-e572-da38204421f5}</Project>
+      <Project>{7372c9a9-a480-177a-abdc-9ff79cdff712}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
