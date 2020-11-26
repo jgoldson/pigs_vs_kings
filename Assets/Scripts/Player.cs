@@ -123,6 +123,8 @@ public class Player : MonoBehaviour
             GameObject newCrate = Instantiate(
             crate, crown.transform.position, transform.rotation) as GameObject;
             newCrate.SetActive(true);
+            newCrate.layer = 17;
+            Debug.Log(newCrate.layer);
             
             newCrate.GetComponent<Rigidbody2D>().velocity = 
                 new Vector2(myRigidBody.velocity.x + (crateThrowSpeed * playerDirection),

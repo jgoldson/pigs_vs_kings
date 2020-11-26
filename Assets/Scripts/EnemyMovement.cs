@@ -6,6 +6,7 @@ public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 1f;
     Rigidbody2D myRigidBody;
+    bool canMove = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,10 +16,14 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (IsFacingLeft()) {
-            myRigidBody.velocity = new Vector2(-moveSpeed, 0f);
+        if (canMove){
+            if (IsFacingLeft()) {
+                myRigidBody.velocity = new Vector2(-moveSpeed, 0f);
+            } else {
+                myRigidBody.velocity = new Vector2(moveSpeed, 0f);
+            }
         } else {
-            myRigidBody.velocity = new Vector2(moveSpeed, 0f);
+            myRigidBody.velocity = new Vector2(0,0);
         }
     }
 
@@ -27,5 +32,8 @@ public class EnemyMovement : MonoBehaviour
     }
     private bool IsFacingLeft() {
         return transform.localScale.x > 0;
+    }
+    public void StopMovement() {
+        canMove = false;
     }
 }

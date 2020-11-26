@@ -165,3 +165,5 @@ MonoBehaviour:
   - {fileID: 9003307144512934305, guid: 97e2cec45e7807c498b0a34b65405b05, type: 3}
   - {fileID: 5790862616786945197, guid: 416e7cf707789e34e936ee64e289a1ad, type: 3}
   - {fileID: 8148760661897414264, guid: ee7a1dfa5d534c0449ee5b6d85b0ced1, type: 3}
+  max_Breaking_Velocity: 5
+  min_Breaking_Velocity: 1
