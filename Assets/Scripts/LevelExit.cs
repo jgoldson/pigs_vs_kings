@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class LevelExit : MonoBehaviour
 {
-    bool DoorIsOpen = false;
+    [SerializeField] bool DoorIsOpen = false;
+    [SerializeField] bool doorToStart = false;
 
 
     private void OnTriggerEnter2D(Collider2D other) {
@@ -20,7 +21,12 @@ public class LevelExit : MonoBehaviour
     IEnumerator loadNextScene() {
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         yield return new WaitForSeconds(3);
-        SceneManager.LoadScene(currentSceneIndex + 1);
+        if (doorToStart) {
+            SceneManager.LoadScene(0);
+        } else {
+            SceneManager.LoadScene(currentSceneIndex + 1);
+        }
+
     }
 
     public void OpenDoor() {
