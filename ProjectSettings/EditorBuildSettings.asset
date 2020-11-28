@@ -12,14 +12,14 @@ EditorBuildSettings:
     path: Assets/Levels/IntroduceEnemies.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Levels/ClimbTheTower.unity
-    guid: 535253c8d1eadf544ae67682f13e8800
+    path: Assets/Levels/IntroduceFire.unity
+    guid: 66ab01c9699882c48880451d29f8c307
   - enabled: 1
     path: Assets/Levels/IntroduceCannon.unity
     guid: 1de2f69a78ff3eb4696c189c9a5279fe
   - enabled: 1
-    path: Assets/Levels/IntroduceFire.unity
-    guid: 66ab01c9699882c48880451d29f8c307
+    path: Assets/Levels/ClimbTheTower.unity
+    guid: 535253c8d1eadf544ae67682f13e8800
   - enabled: 1
     path: Assets/Levels/IntroduceCrates.unity
     guid: 3b88594bdb92e3647a5812cec0898b42
