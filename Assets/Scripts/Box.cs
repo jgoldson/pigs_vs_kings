@@ -5,6 +5,7 @@ using UnityEngine;
 public class Box : MonoBehaviour
 {
     Rigidbody2D myRigidBody;
+    [SerializeField] int force_Needed_To_Break = 10;
     [SerializeField] GameObject[] cratePieces;
     [SerializeField] GameObject deathCollider;
     [SerializeField] float max_Breaking_Velocity = 5f;
@@ -22,7 +23,7 @@ public class Box : MonoBehaviour
         other.gameObject.layer == 12) 
         //Check if is colliding with ground (9), Player (10), Enemy(12)
         { 
-            if (other.relativeVelocity.magnitude > 10) {
+            if (other.relativeVelocity.magnitude > force_Needed_To_Break) {
                 foreach (GameObject cratePiece in cratePieces) {
                     GameObject newPiece = 
                         Instantiate(cratePiece, transform.position, transform.rotation) as GameObject;

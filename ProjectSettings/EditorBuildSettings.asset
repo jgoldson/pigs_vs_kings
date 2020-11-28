@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Levels/IntroduceCrates.unity
     guid: 3b88594bdb92e3647a5812cec0898b42
   - enabled: 1
+    path: Assets/Levels/GoingDown.unity
+    guid: ba6f749232e800a4fbdf33f223da2a52
+  - enabled: 1
     path: Assets/Levels/Success.unity
     guid: 8150b726d04275e4885421a6e4232f75
   m_configObjects: {}

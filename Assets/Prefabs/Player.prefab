@@ -141,7 +141,7 @@ MonoBehaviour:
   deathKick: {x: 0, y: 10}
   spawnTimer: 2
   crown: {fileID: 103711475}
-  crateThrowSpeed: 5
+  crateThrowSpeed: 10
 --- !u!61 &1741791315
 BoxCollider2D:
   m_ObjectHideFlags: 0
