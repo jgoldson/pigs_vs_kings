@@ -113,7 +113,7 @@ public class Player : MonoBehaviour
 
     private void TryToThrowCrate(){
         if (!hasCrate) { return;}
-        if (CrossPlatformInputManager.GetButtonDown("Fire3")) {
+        if (CrossPlatformInputManager.GetButtonDown("Fire1")) {
             StartCoroutine(ThrowCrate());
         }
     }
