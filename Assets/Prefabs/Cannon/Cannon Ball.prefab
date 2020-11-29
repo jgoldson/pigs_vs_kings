@@ -99,6 +99,7 @@ MonoBehaviour:
   speed: 20
   explosionPrefab: {fileID: 6180291726540674098, guid: ec506807e5f9eda4ca7c86cedffaf14f,
     type: 3}
+  boomSound: {fileID: 8300000, guid: 7a143c1b151f8ec48bd8a266c591c168, type: 3}
 --- !u!50 &1793596612713074965
 Rigidbody2D:
   serializedVersion: 4
