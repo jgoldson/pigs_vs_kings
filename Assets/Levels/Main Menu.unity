@@ -2426,12 +2426,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 32.179455, y: -4.8956833}
-      - {x: -17.934397, y: -4.9428616}
-      - {x: -18.016973, y: -29.102417}
-      - {x: -1.3725386, y: -29.192114}
-      - {x: 31.99001, y: -29.08445}
-      - {x: 32.2023, y: -9.141573}
+    - - {x: -12.948301, y: -4.1125927}
+      - {x: -12.912063, y: -18.48868}
+      - {x: -12.900496, y: -19.946804}
+      - {x: 1.7220654, y: -19.894121}
+      - {x: 11.99164, y: -19.935524}
+      - {x: 11.90526, y: -4.1253824}
 --- !u!1 &290884270
 GameObject:
   m_ObjectHideFlags: 0
@@ -5777,6 +5777,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3531935825426889818, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.243673
+      objectReference: {fileID: 0}
+    - target: {fileID: 3531935825426889818, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5218391
+      objectReference: {fileID: 0}
     - target: {fileID: 3531935825426889819, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_BoundingShape2D
@@ -5787,6 +5797,11 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1741791310}
+    - target: {fileID: 3531935825426889820, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
+        type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 6.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3531935825783899606, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_Name
@@ -5847,6 +5862,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3531935825913655072, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.243673
+      objectReference: {fileID: 0}
+    - target: {fileID: 3531935825913655072, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5218391
+      objectReference: {fileID: 0}
     - target: {fileID: 3531935825913655073, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_BoundingShape2D
@@ -5857,6 +5882,26 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1741791310}
+    - target: {fileID: 3531935825913655074, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
+        type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3531935826148462802, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
+        type: 3}
+      propertyPath: orthographic size
+      value: 6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3531935826317298623, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 3531935826317298623, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -13.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3531935826409905184, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_ChildCameras.Array.size
@@ -5884,7 +5929,7 @@ PrefabInstance:
     - target: {fileID: 8574311863244848804, guid: ca9ad847ca5138944afa534d1bc9edb7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.44
       objectReference: {fileID: 0}
     - target: {fileID: 8574311863244848804, guid: ca9ad847ca5138944afa534d1bc9edb7,
         type: 3}

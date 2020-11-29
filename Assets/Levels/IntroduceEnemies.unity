@@ -8872,31 +8872,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3531935825426889818, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.363673
-      objectReference: {fileID: 0}
-    - target: {fileID: 3531935825426889818, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.4381618
-      objectReference: {fileID: 0}
     - target: {fileID: 3531935825426889819, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_BoundingShape2D
       value: 
       objectReference: {fileID: 284887189}
-    - target: {fileID: 3531935825426889820, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 1741791310}
-    - target: {fileID: 3531935825426889820, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: m_Lens.OrthographicSize
-      value: 7.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3531935825783899606, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_Name
@@ -8957,50 +8937,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3531935825913655072, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.363673
-      objectReference: {fileID: 0}
-    - target: {fileID: 3531935825913655072, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.4381618
-      objectReference: {fileID: 0}
     - target: {fileID: 3531935825913655073, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_BoundingShape2D
       value: 
       objectReference: {fileID: 284887189}
-    - target: {fileID: 3531935825913655073, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: m_Damping
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3531935825913655073, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: m_ConfineScreenEdges
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3531935825913655074, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 1741791310}
     - target: {fileID: 3531935826148462802, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: orthographic size
-      value: 7.5
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 3531935826317298623, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.297783
+      value: 8.726816
       objectReference: {fileID: 0}
     - target: {fileID: 3531935826317298623, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -16.261919
+      value: -16.294178
       objectReference: {fileID: 0}
     - target: {fileID: 3531935826409905184, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
@@ -9009,19 +8964,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3531935826409905184, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 1741791310}
+    - target: {fileID: 3531935826409905184, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
+        type: 3}
       propertyPath: m_AnimatedTarget
       value: 
       objectReference: {fileID: 1741791314}
-    - target: {fileID: 3531935826462410742, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: m_DeadZoneHeight
-      value: 0.101
-      objectReference: {fileID: 0}
-    - target: {fileID: 3531935826462410742, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: m_DeadZoneWidth
-      value: 0.101
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 034d37a8ccd5fa74f875eae933d0e1b5, type: 3}
 --- !u!1001 &8574311864233708481
