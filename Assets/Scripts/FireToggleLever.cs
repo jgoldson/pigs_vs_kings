@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class FireToggleLever : MonoBehaviour
 {
-private void OnTriggerEnter2D(Collider2D other) {
-    FindObjectOfType<FireTrap>().TurnOffFire();
-    GetComponent<Animator>().SetBool("Pulled", true);
-}
+
+    [SerializeField] AudioClip fireToggleSound;
+    
+    private void OnTriggerEnter2D(Collider2D other) {
+        AudioSource.PlayClipAtPoint(fireToggleSound, Camera.main.transform.position);
+        FindObjectOfType<FireTrap>().TurnOffFire();
+        GetComponent<Animator>().SetBool("Pulled", true);
+    }
 }

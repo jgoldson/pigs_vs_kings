@@ -6,15 +6,20 @@ public class diamondPickup : MonoBehaviour
 {
 
     [SerializeField] int pointValue = 100;
+    [SerializeField] AudioClip diamondPickupSFX;
 
     GameSession gameSession;
 
     private void Start() {
-        gameSession = FindObjectOfType<GameSession>();
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        Destroy(gameObject);
+        AudioSource.PlayClipAtPoint(diamondPickupSFX, Camera.main.transform.position);
+        gameObject.SetActive(false);
+        Debug.Log("Adding points for diamond");
+        gameSession = FindObjectOfType<GameSession>();
         gameSession.AddToScore(pointValue);
+        Destroy(gameObject, 1);
     }
 }

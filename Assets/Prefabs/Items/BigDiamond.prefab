@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6405059351786363059}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.3692875, y: 19.04673, z: 2.5411716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -117,6 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointValue: 500
+  diamondPickupSFX: {fileID: 8300000, guid: f086501feb75cc14aa177d64ee8b1fe5, type: 3}
 --- !u!58 &6405059351786363084
 CircleCollider2D:
   m_ObjectHideFlags: 0

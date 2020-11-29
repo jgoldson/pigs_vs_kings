@@ -160,6 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7d2655ff8978c34888055db748843bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force_Needed_To_Break: 10
   cratePieces:
   - {fileID: 3800079087831084619, guid: c48d80fbbc714eb46bc30cdbb8e0f5c2, type: 3}
   - {fileID: 9003307144512934305, guid: 97e2cec45e7807c498b0a34b65405b05, type: 3}
@@ -167,3 +168,4 @@ MonoBehaviour:
   - {fileID: 8148760661897414264, guid: ee7a1dfa5d534c0449ee5b6d85b0ced1, type: 3}
   max_Breaking_Velocity: 5
   min_Breaking_Velocity: 1
+  breakSound: {fileID: 8300000, guid: 512ff7333e1332a4483dbe49f8f1eca5, type: 3}

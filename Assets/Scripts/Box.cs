@@ -7,9 +7,9 @@ public class Box : MonoBehaviour
     Rigidbody2D myRigidBody;
     [SerializeField] int force_Needed_To_Break = 10;
     [SerializeField] GameObject[] cratePieces;
-    [SerializeField] GameObject deathCollider;
     [SerializeField] float max_Breaking_Velocity = 5f;
     [SerializeField] float min_Breaking_Velocity = 1f;
+    [SerializeField] AudioClip breakSound;
     
 
     private void Start() {
@@ -25,6 +25,7 @@ public class Box : MonoBehaviour
         { 
             if (other.relativeVelocity.magnitude > force_Needed_To_Break) {
                 foreach (GameObject cratePiece in cratePieces) {
+                    AudioSource.PlayClipAtPoint(breakSound, transform.position);
                     GameObject newPiece = 
                         Instantiate(cratePiece, transform.position, transform.rotation) as GameObject;
                     newPiece.GetComponent<Rigidbody2D>().velocity = 

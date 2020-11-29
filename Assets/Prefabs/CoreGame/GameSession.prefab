@@ -402,7 +402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -693,6 +693,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LivesBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916118179176202675, guid: aeb9ad87ab68fdc4487b935c6b99b9ec,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aeb9ad87ab68fdc4487b935c6b99b9ec, type: 3}

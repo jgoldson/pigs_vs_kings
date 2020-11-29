@@ -34,4 +34,7 @@ public class ScenePersist : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    public void DestroyScenePersist() {
+        Destroy(gameObject);
+    }
 }

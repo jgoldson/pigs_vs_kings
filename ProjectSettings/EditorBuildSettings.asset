@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Levels/GoingDown.unity
     guid: ba6f749232e800a4fbdf33f223da2a52
   - enabled: 1
+    path: Assets/Levels/TwoLevels.unity
+    guid: 2660aae809c319946a9430ad1c112eca
+  - enabled: 1
     path: Assets/Levels/Success.unity
     guid: 8150b726d04275e4885421a6e4232f75
   m_configObjects: {}

@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     [SerializeField] float spawnTimer = 3f;
     [SerializeField] GameObject crown;
     [SerializeField] float crateThrowSpeed = 10f;
+    [SerializeField] AudioClip deathSound;
     float playerDirection = 1;
 
 
@@ -49,9 +50,11 @@ public class Player : MonoBehaviour
     }
 
     private void Run() {
+        
         float controlThrow = CrossPlatformInputManager.GetAxis("Horizontal"); //Value is between -1 and +1
         Vector2 playerVelocity = new Vector2(controlThrow * runSpeed, myRigidBody.velocity.y);
         myRigidBody.velocity = playerVelocity;
+        
     }
     private void FlipSprite() {
         bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
@@ -71,6 +74,7 @@ public class Player : MonoBehaviour
     }
     private void Die() {
         if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy", "Hazards"))) {
+            AudioSource.PlayClipAtPoint(deathSound, transform.position);
             GetComponent<Rigidbody2D>().velocity = deathKick;
             isAlive = false;
             myAnimator.SetTrigger("Die");

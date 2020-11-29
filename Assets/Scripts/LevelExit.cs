@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelExit : MonoBehaviour
 {
+    [SerializeField] int pointsForFinishingLevel = 1000;
     [SerializeField] bool DoorIsOpen = false;
     [SerializeField] bool doorToStart = false;
 
@@ -24,6 +25,9 @@ public class LevelExit : MonoBehaviour
         if (doorToStart) {
             SceneManager.LoadScene(0);
         } else {
+            ScenePersist scenePersist = FindObjectOfType<ScenePersist>();
+            if (scenePersist) {scenePersist.DestroyScenePersist();}
+            FindObjectOfType<GameSession>().AddToScore(pointsForFinishingLevel);
             SceneManager.LoadScene(currentSceneIndex + 1);
         }
 

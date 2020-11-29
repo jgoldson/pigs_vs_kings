@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
 
     Rigidbody2D myBodyCollider;
+    [SerializeField] AudioClip deathSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class Enemy : MonoBehaviour
     private void WatchForDamage() {
         if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("EnemyHazard"))) {
            // GetComponent<Rigidbody2D>().velocity = deathKick;
+           AudioSource.PlayClipAtPoint(deathSound, transform.position);
            FindObjectOfType<EnemyMovement>().StopMovement();
             GetComponent<Animator>().SetTrigger("Die");
             
