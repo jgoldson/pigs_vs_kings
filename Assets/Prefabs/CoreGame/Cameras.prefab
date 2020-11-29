@@ -55,7 +55,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 6
+    OrthographicSize: 5.5
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
@@ -143,7 +143,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3531935825913655087}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.363673, y: 1.5918379, z: 2.0957031}
+  m_LocalPosition: {x: -7.363673, y: -1.4381618, z: 2.0957031}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3531935826462410741}
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 5
+    OrthographicSize: 4.5
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
@@ -229,7 +229,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3531935826148462815}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.395798, y: -11.879021, z: -10}
+  m_LocalPosition: {x: 8.726816, y: -16.294178, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3531935825783899607}
@@ -262,7 +262,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 7.5
+  orthographic size: 5.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -381,7 +381,7 @@ MonoBehaviour:
   m_Instructions:
   - m_FullHash: 1432961145
     m_VirtualCamera: {fileID: 3531935825426889820}
-    m_ActivateAfter: 1
+    m_ActivateAfter: 2
     m_MinDuration: 0
   - m_FullHash: 256545655
     m_VirtualCamera: {fileID: 3531935825913655074}
@@ -397,7 +397,23 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   m_CustomBlends: {fileID: 11400000, guid: 6940f19aa91203e48a3b32188e320f47, type: 2}
-  m_ParentHash: []
+  m_ParentHash:
+  - m_Hash: 1432961145
+    m_ParentHash: 756556552
+  - m_Hash: 256545655
+    m_ParentHash: 756556552
+  - m_Hash: 788460410
+    m_ParentHash: 756556552
+  - m_Hash: -1482263730
+    m_ParentHash: 756556552
+  - m_Hash: -483116223
+    m_ParentHash: 756556552
+  - m_Hash: -227078346
+    m_ParentHash: 756556552
+  - m_Hash: -1994304463
+    m_ParentHash: 756556552
+  - m_Hash: 353705763
+    m_ParentHash: 756556552
 --- !u!1 &3531935826462410740
 GameObject:
   m_ObjectHideFlags: 0
