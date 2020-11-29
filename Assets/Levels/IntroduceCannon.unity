@@ -10675,7 +10675,7 @@ PrefabInstance:
     - target: {fileID: 1137309821863752084, guid: 295435b51c8ed4746aeb2f8a07b1a589,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1137309821863752086, guid: 295435b51c8ed4746aeb2f8a07b1a589,
         type: 3}
@@ -10741,16 +10741,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3531935825426889818, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.2136736
-      objectReference: {fileID: 0}
-    - target: {fileID: 3531935825426889818, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.3081608
-      objectReference: {fileID: 0}
     - target: {fileID: 3531935825426889819, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_BoundingShape2D
@@ -10761,11 +10751,6 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1741791310}
-    - target: {fileID: 3531935825426889820, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: m_Lens.OrthographicSize
-      value: 7.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3531935825783899606, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_Name
@@ -10826,56 +10811,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3531935825913655072, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.2136736
-      objectReference: {fileID: 0}
-    - target: {fileID: 3531935825913655072, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.3081608
-      objectReference: {fileID: 0}
     - target: {fileID: 3531935825913655073, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_BoundingShape2D
       value: 
       objectReference: {fileID: 284887189}
-    - target: {fileID: 3531935825913655073, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: m_Damping
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3531935825913655073, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: m_ConfineScreenEdges
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3531935825913655074, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1741791310}
-    - target: {fileID: 3531935826148462802, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: orthographic size
-      value: 7.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3531935826148462815, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: m_TagString
-      value: MainCamera
-      objectReference: {fileID: 0}
-    - target: {fileID: 3531935826317298623, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 12.383381
-      objectReference: {fileID: 0}
-    - target: {fileID: 3531935826317298623, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -16.179081
-      objectReference: {fileID: 0}
     - target: {fileID: 3531935826409905184, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_ChildCameras.Array.size
@@ -10886,16 +10831,6 @@ PrefabInstance:
       propertyPath: m_AnimatedTarget
       value: 
       objectReference: {fileID: 1741791314}
-    - target: {fileID: 3531935826462410742, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: m_DeadZoneHeight
-      value: 0.101
-      objectReference: {fileID: 0}
-    - target: {fileID: 3531935826462410742, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
-        type: 3}
-      propertyPath: m_DeadZoneWidth
-      value: 0.101
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 034d37a8ccd5fa74f875eae933d0e1b5, type: 3}
 --- !u!1001 &6784056337493540803

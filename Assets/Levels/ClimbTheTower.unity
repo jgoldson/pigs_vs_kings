@@ -277,7 +277,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 18
-      m_TileSpriteIndex: 2
+      m_TileSpriteIndex: 25
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -4469,9 +4469,8 @@ Tilemap:
   - m_RefCount: 2
     m_Data: {fileID: -2560665351331762178, guid: 81a414d53586f634da3afdcc55292808,
       type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -6808164498187367688, guid: 81a414d53586f634da3afdcc55292808,
-      type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 2
     m_Data: {fileID: -3313916609126551260, guid: 81a414d53586f634da3afdcc55292808,
       type: 3}
@@ -4538,8 +4537,9 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -2701651782496971736, guid: 81a414d53586f634da3afdcc55292808,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -6808164498187367688, guid: 81a414d53586f634da3afdcc55292808,
+      type: 3}
   m_TileMatrixArray:
   - m_RefCount: 466
     m_Data:
@@ -4669,8 +4669,8 @@ PolygonCollider2D:
       - {x: -5.078841, y: -0.27697086}
       - {x: -10.570262, y: -0.1923132}
       - {x: -10.677896, y: -12.158123}
-      - {x: -10.736671, y: -17.769453}
-      - {x: 17.058517, y: -17.827415}
+      - {x: -10.765668, y: -18.204393}
+      - {x: 17.116508, y: -18.204363}
       - {x: 17.456993, y: 17.231094}
 --- !u!1 &295088316
 GameObject:
@@ -14352,6 +14352,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3531935825426889818, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.363673
+      objectReference: {fileID: 0}
+    - target: {fileID: 3531935825426889818, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.4381618
+      objectReference: {fileID: 0}
     - target: {fileID: 3531935825426889819, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_BoundingShape2D
@@ -14425,7 +14435,12 @@ PrefabInstance:
     - target: {fileID: 3531935825913655072, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.54183865
+      value: 0.3438387
+      objectReference: {fileID: 0}
+    - target: {fileID: 3531935825913655072, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.363673
       objectReference: {fileID: 0}
     - target: {fileID: 3531935825913655073, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
@@ -14440,17 +14455,17 @@ PrefabInstance:
     - target: {fileID: 3531935826148462802, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: orthographic size
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3531935826317298623, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.4495659
+      value: 1.4474735
       objectReference: {fileID: 0}
     - target: {fileID: 3531935826317298623, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.772635
+      value: -12.776336
       objectReference: {fileID: 0}
     - target: {fileID: 3531935826409905184, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
