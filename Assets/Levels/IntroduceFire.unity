@@ -15677,12 +15677,12 @@ PrefabInstance:
     - target: {fileID: 3328588722532575751, guid: 9981cf29573996e45a5c97984c5c6b31,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 74.84
+      value: 103.6
       objectReference: {fileID: 0}
     - target: {fileID: 3328588722532575751, guid: 9981cf29573996e45a5c97984c5c6b31,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.8
+      value: -8.69
       objectReference: {fileID: 0}
     - target: {fileID: 3328588722532575751, guid: 9981cf29573996e45a5c97984c5c6b31,
         type: 3}
@@ -15733,21 +15733,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FireToggle
-      objectReference: {fileID: 0}
-    - target: {fileID: 4599389175466056622, guid: 9981cf29573996e45a5c97984c5c6b31,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4599389175466056622, guid: 9981cf29573996e45a5c97984c5c6b31,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4599389175466056622, guid: 9981cf29573996e45a5c97984c5c6b31,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9981cf29573996e45a5c97984c5c6b31, type: 3}

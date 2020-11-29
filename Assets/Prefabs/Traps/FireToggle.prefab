@@ -72,7 +72,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 399b584fc71f59949b7b06db4bde601d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireToggleSound: {fileID: 8300000, guid: 13e11b9c37cef5e49a1ab31e3e46f9b5, type: 3}
+  fireToggleSound: {fileID: 8300000, guid: 80e07d35b038706488243fd1f0dbf7da, type: 3}
 --- !u!95 &253596572
 Animator:
   serializedVersion: 3
