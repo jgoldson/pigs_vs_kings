@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
 
 
     //State
-    bool isAlive = true;
+    bool canMove = true;
     bool hasCrate = false;
     bool canPickUp = false;
     
@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if (!isAlive){return;}
+        if (!canMove){return;}
 
         Run();
         FlipSprite();
@@ -76,7 +76,7 @@ public class Player : MonoBehaviour
         if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy", "Hazards"))) {
             AudioSource.PlayClipAtPoint(deathSound, transform.position);
             GetComponent<Rigidbody2D>().velocity = deathKick;
-            isAlive = false;
+            canMove = false;
             myAnimator.SetTrigger("Die");
             StartCoroutine(WaitForSpawn());
             
@@ -90,7 +90,7 @@ public class Player : MonoBehaviour
     public void GoThroughDoor() {
         myRigidBody.velocity = new Vector2(0f, 0f);
         myAnimator.SetTrigger("GoThroughDoor");
-        isAlive = false;
+        canMove = false;
     }
 
     private void PickUpObject(){
@@ -135,5 +135,12 @@ public class Player : MonoBehaviour
                 myRigidBody.velocity.y + crateThrowSpeed);
             Destroy(crate);
             hasCrate = false;
+    }
+
+    public void StopPlayerMovement() {
+        canMove = false;
+    }
+    public void AllowPlayerMovement() {
+        canMove = true;
     }
 }

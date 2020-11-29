@@ -5,6 +5,7 @@ using UnityEngine;
 public class Cannon : MonoBehaviour
 {
     [SerializeField] GameObject projectile, gun;
+    [SerializeField] AudioClip cannonSound;
 
     Animator animator;
     GameObject projectileParent;
@@ -30,6 +31,7 @@ public class Cannon : MonoBehaviour
     }
 
     public void Fire() {
+        AudioSource.PlayClipAtPoint(cannonSound, transform.position);
         GameObject newProjectile = Instantiate(
             projectile, gun.transform.position, transform.rotation) as GameObject;
         newProjectile.transform.parent = projectileParent.transform;

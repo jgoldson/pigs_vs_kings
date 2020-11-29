@@ -39,6 +39,7 @@
      <Compile Include="Assets\Scripts\Box.cs" />
      <Compile Include="Assets\Scripts\Cannon.cs" />
      <Compile Include="Assets\Scripts\CannonBall.cs" />
+     <Compile Include="Assets\Scripts\Dialogue.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\EnemyPigWithCrate.cs" />
