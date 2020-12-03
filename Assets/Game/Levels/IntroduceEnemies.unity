@@ -8753,6 +8753,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 383082474, guid: b90026ee34b84e04e9d959692368656b, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: b6f37fe5492c4474c86f65de97796804,
+        type: 2}
     - target: {fileID: 62165117120638916, guid: b90026ee34b84e04e9d959692368656b,
         type: 3}
       propertyPath: m_LocalPosition.x
