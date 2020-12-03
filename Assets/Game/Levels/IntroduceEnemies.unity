@@ -121,18 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &89327912 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4213211589883163686, guid: b90026ee34b84e04e9d959692368656b,
-    type: 3}
-  m_PrefabInstance: {fileID: 3412875387798198821}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &152239578 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8873367002641395012, guid: 840ceedff105e9247a229b0b348853fd,
@@ -2985,27 +2973,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &383082472 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4213211590216782076, guid: b90026ee34b84e04e9d959692368656b,
-    type: 3}
-  m_PrefabInstance: {fileID: 3412875387798198821}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &383082474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 383082472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9892b2cb6d266ee4da909db0422e9e63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 0c426494587200d489d96210465dea36, type: 2}
-  SpeakerText: {fileID: 89327912}
-  DialogueText: {fileID: 1850667756}
 --- !u!1001 &601622516
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8203,18 +8170,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &1850667756 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4213211590525045340, guid: b90026ee34b84e04e9d959692368656b,
-    type: 3}
-  m_PrefabInstance: {fileID: 3412875387798198821}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1920899947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8903,13 +8858,32 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4213211589081763752, guid: b90026ee34b84e04e9d959692368656b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -59.600098
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213211589883163681, guid: b90026ee34b84e04e9d959692368656b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.7999268
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213211590216782077, guid: b90026ee34b84e04e9d959692368656b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213211590576370348, guid: b90026ee34b84e04e9d959692368656b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 6.199951
+      objectReference: {fileID: 0}
     - target: {fileID: 7140132067764079154, guid: b90026ee34b84e04e9d959692368656b,
         type: 3}
       propertyPath: m_Name
       value: DialogueCanvas
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1374839685, guid: b90026ee34b84e04e9d959692368656b, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b90026ee34b84e04e9d959692368656b, type: 3}
 --- !u!1001 &3531935825416765864
 PrefabInstance:
@@ -8926,7 +8900,7 @@ PrefabInstance:
     - target: {fileID: 3531935825426889818, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -16.36
+      value: -17.26
       objectReference: {fileID: 0}
     - target: {fileID: 3531935825426889818, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
@@ -9006,7 +8980,7 @@ PrefabInstance:
     - target: {fileID: 3531935825913655072, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -16.36
+      value: -17.16
       objectReference: {fileID: 0}
     - target: {fileID: 3531935825913655072, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
@@ -9026,12 +9000,12 @@ PrefabInstance:
     - target: {fileID: 3531935826317298623, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.9368477
+      value: 6.526716
       objectReference: {fileID: 0}
     - target: {fileID: 3531935826317298623, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -16.310347
+      value: -17.21405
       objectReference: {fileID: 0}
     - target: {fileID: 3531935826317298623, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
@@ -9053,6 +9027,16 @@ PrefabInstance:
       propertyPath: m_AnimatedTarget
       value: 
       objectReference: {fileID: 1741791314}
+    - target: {fileID: 3531935826462410742, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
+        type: 3}
+      propertyPath: m_ScreenY
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3531935827021786381, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
+        type: 3}
+      propertyPath: m_ScreenY
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 034d37a8ccd5fa74f875eae933d0e1b5, type: 3}
 --- !u!1001 &8574311864233708481

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &1374839685
+--- !u!114 &383082474
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9892b2cb6d266ee4da909db0422e9e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  dialogue: {fileID: 11400000, guid: 0c426494587200d489d96210465dea36, type: 2}
   SpeakerText: {fileID: 4213211589883163686}
   DialogueText: {fileID: 4213211590525045340}
+  typeDelay: 0.05
 --- !u!1 &7140132067764079154
 GameObject:
   m_ObjectHideFlags: 0
@@ -73,7 +74,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &3751943279166019201
 MonoBehaviour:
@@ -265,7 +266,7 @@ PrefabInstance:
     - target: {fileID: 5193217191004160828, guid: f3607f8895488124a9125efe576bdeaf,
         type: 3}
       propertyPath: m_Color.a
-      value: 0.78431374
+      value: 0.9411765
       objectReference: {fileID: 0}
     - target: {fileID: 5193217191004160829, guid: f3607f8895488124a9125efe576bdeaf,
         type: 3}
@@ -285,12 +286,12 @@ PrefabInstance:
     - target: {fileID: 5193217191928577592, guid: f3607f8895488124a9125efe576bdeaf,
         type: 3}
       propertyPath: m_Color.a
-      value: 0.78431374
+      value: 0.9411765
       objectReference: {fileID: 0}
     - target: {fileID: 5193217191928577593, guid: f3607f8895488124a9125efe576bdeaf,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -59.600037
+      value: -59.600098
       objectReference: {fileID: 0}
     - target: {fileID: 5193217191928577593, guid: f3607f8895488124a9125efe576bdeaf,
         type: 3}

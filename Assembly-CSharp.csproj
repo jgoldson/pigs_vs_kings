@@ -39,8 +39,8 @@
      <Compile Include="Assets\Dialogue\Dialogue.cs" />
      <Compile Include="Assets\Dialogue\DialogueControl.cs" />
      <Compile Include="Assets\Dialogue\DialogueNode.cs" />
-     <Compile Include="Assets\Dialogue\DialogueTest1.cs" />
      <Compile Include="Assets\Game\Scripts\Box.cs" />
+     <Compile Include="Assets\Game\Scripts\Cage.cs" />
      <Compile Include="Assets\Game\Scripts\Cannon.cs" />
      <Compile Include="Assets\Game\Scripts\CannonBall.cs" />
      <Compile Include="Assets\Game\Scripts\Enemy.cs" />
@@ -50,6 +50,7 @@
      <Compile Include="Assets\Game\Scripts\FireTrap.cs" />
      <Compile Include="Assets\Game\Scripts\GameSession.cs" />
      <Compile Include="Assets\Game\Scripts\KeyPickup.cs" />
+     <Compile Include="Assets\Game\Scripts\KingLarry.cs" />
      <Compile Include="Assets\Game\Scripts\LevelExit.cs" />
      <Compile Include="Assets\Game\Scripts\LivesBar.cs" />
      <Compile Include="Assets\Game\Scripts\Player.cs" />
