@@ -12108,7 +12108,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: c89a947d86060d943a270f66471832a2, type: 2}
+  m_Material: {fileID: 6200000, guid: dbf0b167ed1b87e4fac2c8d05e9a1488, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -12282,7 +12282,7 @@ PrefabInstance:
     - target: {fileID: 383082474, guid: b90026ee34b84e04e9d959692368656b, type: 3}
       propertyPath: dialogue
       value: 
-      objectReference: {fileID: 11400000, guid: c20646886fb8e724ea512ac9ebf9cc1c,
+      objectReference: {fileID: 11400000, guid: cd75912ea12cce0428b256a3194809f1,
         type: 2}
     - target: {fileID: 62165117120638916, guid: b90026ee34b84e04e9d959692368656b,
         type: 3}
@@ -12388,6 +12388,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213211589081763752, guid: b90026ee34b84e04e9d959692368656b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -59.60022
       objectReference: {fileID: 0}
     - target: {fileID: 7140132067764079154, guid: b90026ee34b84e04e9d959692368656b,
         type: 3}
