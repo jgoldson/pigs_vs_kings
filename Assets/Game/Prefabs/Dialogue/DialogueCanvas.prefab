@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9892b2cb6d266ee4da909db0422e9e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 0c426494587200d489d96210465dea36, type: 2}
+  dialogue: {fileID: 0}
   SpeakerText: {fileID: 4213211589883163686}
   DialogueText: {fileID: 4213211590525045340}
+  kingIsHere: 0
   typeDelay: 0.05
 --- !u!1 &7140132067764079154
 GameObject:
@@ -262,6 +263,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DialogueGroup
+      objectReference: {fileID: 0}
+    - target: {fileID: 5193217190954826701, guid: f3607f8895488124a9125efe576bdeaf,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Error: Dialogue not set in dialogue group'
       objectReference: {fileID: 0}
     - target: {fileID: 5193217191004160828, guid: f3607f8895488124a9125efe576bdeaf,
         type: 3}
