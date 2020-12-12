@@ -37,11 +37,6 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Dialogue\Editor\DialogueEditor.cs" />
-     <Compile Include="Assets\Z-Extras\Shared Assets\Joystick Pack\Scripts\Editor\DynamicJoystickEditor.cs" />
-     <Compile Include="Assets\Z-Extras\Shared Assets\Joystick Pack\Scripts\Editor\FloatingJoystickEditor.cs" />
-     <Compile Include="Assets\Z-Extras\Shared Assets\Joystick Pack\Scripts\Editor\JoystickEditor.cs" />
-     <Compile Include="Assets\Z-Extras\Shared Assets\Joystick Pack\Scripts\Editor\VariableJoystickEditor.cs" />
-     <Compile Include="Assets\Z-Extras\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Unity/2019.4.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -683,9 +678,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{7372c9a9-a480-177a-abdc-9ff79cdff712}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{d494c1a1-2359-7ae4-8a07-13a2f4ef3582}</Project>
       <Name>Assembly-CSharp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
+      <Project>{12d95616-70b8-efde-ebba-745c758d201d}</Project>
+      <Name>Assembly-CSharp-Editor-firstpass</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
