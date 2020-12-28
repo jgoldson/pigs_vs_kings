@@ -16,7 +16,6 @@ private void Start() {
             FindObjectOfType<Player>().GoThroughDoor();
             GetComponent<Animator>().SetTrigger("OpenDoor");
             StartCoroutine(loadNextScene());
-        
     }
 
     IEnumerator loadNextScene() {
@@ -33,8 +32,7 @@ private int GetSavedLevel() {
     if (PlayerPrefs.HasKey("SavedLevel"))
 	{
 		savedLevel = PlayerPrefs.GetInt("SavedLevel");
-        gameSession.SetLives(PlayerPrefs.GetInt("SavedLives"));
-        gameSession.SetScore(PlayerPrefs.GetInt("SavedScore"));
+        gameSession.LoadGameStats();
 		Debug.Log("Game data loaded!");
 	}
 	else

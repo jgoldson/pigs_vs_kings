@@ -98,5 +98,11 @@ public class GameSession : MonoBehaviour
         score = savedScore;
         scoreText.text = score.ToString();
     }
+    public void LoadGameStats(){
+        score = PlayerPrefs.GetInt("SavedScore");
+        scoreText.text = score.ToString();
+        playerLives = PlayerPrefs.GetInt("SavedLives");
+        UpdateHeartBar();
+    }
 
 }
