@@ -84,5 +84,17 @@ public class GameSession : MonoBehaviour
                 break;
         }
     }
+    public int GetLives(){
+        return playerLives;
+    }
+    public int GetScore(){
+        return score;
+    }
+    public void SetLives(int savedLives){
+        playerLives = savedLives;
+    }
+    public void SetScore(int savedScore){
+        score = savedScore;
+    }
 
 }

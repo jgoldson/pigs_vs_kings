@@ -6,8 +6,12 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] bool newGame = false;
+    GameSession gameSession;
     int savedLevel;
 
+private void Start() {
+    gameSession = FindObjectOfType<GameSession>();
+}
     private void OnTriggerEnter2D(Collider2D other) {
             FindObjectOfType<Player>().GoThroughDoor();
             GetComponent<Animator>().SetTrigger("OpenDoor");
@@ -29,6 +33,8 @@ private int GetSavedLevel() {
     if (PlayerPrefs.HasKey("SavedLevel"))
 	{
 		savedLevel = PlayerPrefs.GetInt("SavedLevel");
+        gameSession.SetLives(PlayerPrefs.GetInt("SavedLives"));
+        gameSession.SetScore(PlayerPrefs.GetInt("SavedScore"));
 		Debug.Log("Game data loaded!");
 	}
 	else

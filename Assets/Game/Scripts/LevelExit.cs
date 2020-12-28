@@ -8,6 +8,11 @@ public class LevelExit : MonoBehaviour
     [SerializeField] int pointsForFinishingLevel = 1000;
     [SerializeField] bool DoorIsOpen = false;
     [SerializeField] bool doorToStart = false;
+    GameSession gameSession;
+
+    private void Start() {
+        gameSession = FindObjectOfType<GameSession>();
+    }
 
 
     private void OnTriggerEnter2D(Collider2D other) {
@@ -25,7 +30,10 @@ public class LevelExit : MonoBehaviour
         if (doorToStart) {
             SceneManager.LoadScene(0);
         } else {
+            
             PlayerPrefs.SetInt("SavedLevel", currentSceneIndex + 1);
+            PlayerPrefs.SetInt("SavedScore", gameSession.GetScore());
+            PlayerPrefs.SetInt("SavedLives", gameSession.GetLives());
             PlayerPrefs.Save();
 	        Debug.Log("Game data saved!");
             ScenePersist scenePersist = FindObjectOfType<ScenePersist>();
