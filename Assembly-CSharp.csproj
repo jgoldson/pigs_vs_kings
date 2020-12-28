@@ -53,7 +53,9 @@
      <Compile Include="Assets\Game\Scripts\KingLarry.cs" />
      <Compile Include="Assets\Game\Scripts\LevelExit.cs" />
      <Compile Include="Assets\Game\Scripts\LivesBar.cs" />
+     <Compile Include="Assets\Game\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Game\Scripts\Player.cs" />
+     <Compile Include="Assets\Game\Scripts\SavePrefs.cs" />
      <Compile Include="Assets\Game\Scripts\ScenePersist.cs" />
      <Compile Include="Assets\Game\Scripts\diamondPickup.cs" />
      <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />

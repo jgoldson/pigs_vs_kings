@@ -301,17 +301,17 @@ PrefabInstance:
     - target: {fileID: 3531935826148462802, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: orthographic size
-      value: 4
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 3531935826317298623, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.0351186
+      value: -2.7769551
       objectReference: {fileID: 0}
     - target: {fileID: 3531935826317298623, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.0537157
+      value: -3.5538063
       objectReference: {fileID: 0}
     - target: {fileID: 3531935826317298623, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
@@ -1772,6 +1772,11 @@ PrefabInstance:
       propertyPath: kingIsHere
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 383082474, guid: b90026ee34b84e04e9d959692368656b, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 0c426494587200d489d96210465dea36,
+        type: 2}
     - target: {fileID: 62165117120638916, guid: b90026ee34b84e04e9d959692368656b,
         type: 3}
       propertyPath: m_LocalPosition.x
