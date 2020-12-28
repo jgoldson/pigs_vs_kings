@@ -6,10 +6,11 @@ public class FireToggleLever : MonoBehaviour
 {
 
     [SerializeField] AudioClip fireToggleSound;
+    [SerializeField] FireTrap fireTrapToToggle;
     
     private void OnTriggerEnter2D(Collider2D other) {
         AudioSource.PlayClipAtPoint(fireToggleSound, Camera.main.transform.position);
-        FindObjectOfType<FireTrap>().TurnOffFire();
+        fireTrapToToggle.TurnOffFire();
         GetComponent<Animator>().SetBool("Pulled", true);
     }
 }
