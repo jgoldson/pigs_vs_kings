@@ -92,9 +92,11 @@ public class GameSession : MonoBehaviour
     }
     public void SetLives(int savedLives){
         playerLives = savedLives;
+        UpdateHeartBar();
     }
     public void SetScore(int savedScore){
         score = savedScore;
+        scoreText.text = score.ToString();
     }
 
 }
