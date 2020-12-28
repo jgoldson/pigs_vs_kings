@@ -128,6 +128,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 383082474, guid: b90026ee34b84e04e9d959692368656b, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: b95a642a4c3d3bd4bbcf50fe4dfab0ae,
+        type: 2}
     - target: {fileID: 1374839685, guid: b90026ee34b84e04e9d959692368656b, type: 3}
       propertyPath: dialogue
       value: 
@@ -14653,7 +14658,7 @@ PrefabInstance:
     - target: {fileID: 3531935826317298623, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -13.704388
+      value: -13.70439
       objectReference: {fileID: 0}
     - target: {fileID: 3531935826317298623, guid: 034d37a8ccd5fa74f875eae933d0e1b5,
         type: 3}
