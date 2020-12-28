@@ -25,15 +25,18 @@ public class LevelExit : MonoBehaviour
         if (doorToStart) {
             SceneManager.LoadScene(0);
         } else {
+            PlayerPrefs.SetInt("SavedLevel", currentSceneIndex + 1);
+            PlayerPrefs.Save();
+	        Debug.Log("Game data saved!");
             ScenePersist scenePersist = FindObjectOfType<ScenePersist>();
             if (scenePersist) {scenePersist.DestroyScenePersist();}
             FindObjectOfType<GameSession>().AddToScore(pointsForFinishingLevel);
             SceneManager.LoadScene(currentSceneIndex + 1);
         }
-
     }
 
     public void OpenDoor() {
         DoorIsOpen = true;
     }
+
 }

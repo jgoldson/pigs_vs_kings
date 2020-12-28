@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] bool newGame = false;
     int savedLevel;
 
     private void OnTriggerEnter2D(Collider2D other) {
@@ -17,6 +18,9 @@ public class MainMenu : MonoBehaviour
     IEnumerator loadNextScene() {
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         yield return new WaitForSeconds(3);
+        if (newGame) {
+            PlayerPrefs.DeleteAll();
+        }
         SceneManager.LoadScene(GetSavedLevel());
     }
 
