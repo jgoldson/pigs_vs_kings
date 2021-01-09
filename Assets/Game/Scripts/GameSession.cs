@@ -64,6 +64,14 @@ public class GameSession : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex);
         UpdateHeartBar();
     }
+    public void AddLife(){
+        if (playerLives < 3){
+        playerLives++;
+        UpdateHeartBar();
+        } else {
+            AddToScore(500);
+        }
+    }
 
     private void UpdateHeartBar() {
         switch (playerLives) {
