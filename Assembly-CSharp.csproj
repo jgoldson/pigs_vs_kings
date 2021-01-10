@@ -58,6 +58,7 @@
      <Compile Include="Assets\Dialogue\Dialogue.cs" />
      <Compile Include="Assets\Dialogue\DialogueControl.cs" />
      <Compile Include="Assets\Dialogue\DialogueNode.cs" />
+     <Compile Include="Assets\Game\Scripts\Bird.cs" />
      <Compile Include="Assets\Game\Scripts\Box.cs" />
      <Compile Include="Assets\Game\Scripts\Cage.cs" />
      <Compile Include="Assets\Game\Scripts\Cannon.cs" />
