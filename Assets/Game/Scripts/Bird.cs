@@ -24,7 +24,7 @@ public class Bird : MonoBehaviour
         if (timeToChangeDistance < 0f) {
             xDistanceToFollow = Random.Range(0.7f, 0.9f);
             yDistanceToFollow = Random.Range(0.2f, 0.4f);
-            timeToChangeDistance = Random.Range(3f, 8f);
+            timeToChangeDistance = Random.Range(2f, 4f);
         }
         if (FollowPlayer) {
         Vector2 playerPos = player.transform.position;

@@ -6,6 +6,7 @@ public class Cannon : MonoBehaviour
 {
     [SerializeField] GameObject projectile, gun;
     [SerializeField] AudioClip cannonSound;
+    [SerializeField] GameObject pigLightingCannon;
 
     Animator animator;
     GameObject projectileParent;
@@ -20,10 +21,13 @@ public class Cannon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!pigLightingCannon){
+            animator.SetTrigger("Idle");
+        }
     }
 
     public void Fire() {
+        if (!pigLightingCannon){return;}
         AudioSource.PlayClipAtPoint(cannonSound, transform.position);
         GameObject newProjectile = Instantiate(
             projectile, gun.transform.position, transform.rotation) as GameObject;

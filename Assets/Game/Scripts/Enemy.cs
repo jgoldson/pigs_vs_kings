@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
 
     Rigidbody2D myBodyCollider;
     [SerializeField] AudioClip deathSound;
+    [SerializeField] int pointsForKillingEnemy = 200;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +31,7 @@ public class Enemy : MonoBehaviour
      }
 
      public void Die() {
+         FindObjectOfType<GameSession>().AddToScore(pointsForKillingEnemy);
          Destroy(gameObject);
      }
 }
