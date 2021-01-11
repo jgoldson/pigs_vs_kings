@@ -59,6 +59,7 @@
      <Compile Include="Assets\Dialogue\DialogueControl.cs" />
      <Compile Include="Assets\Dialogue\DialogueNode.cs" />
      <Compile Include="Assets\Game\Scripts\Bird.cs" />
+     <Compile Include="Assets\Game\Scripts\Bomb.cs" />
      <Compile Include="Assets\Game\Scripts\Box.cs" />
      <Compile Include="Assets\Game\Scripts\Cage.cs" />
      <Compile Include="Assets\Game\Scripts\Cannon.cs" />
@@ -74,6 +75,7 @@
      <Compile Include="Assets\Game\Scripts\KingLarry.cs" />
      <Compile Include="Assets\Game\Scripts\LevelExit.cs" />
      <Compile Include="Assets\Game\Scripts\MainMenu.cs" />
+     <Compile Include="Assets\Game\Scripts\PigWithBomb.cs" />
      <Compile Include="Assets\Game\Scripts\Player.cs" />
      <Compile Include="Assets\Game\Scripts\SavePrefs.cs" />
      <Compile Include="Assets\Game\Scripts\ScenePersist.cs" />
