@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
     }
 
     private void WatchForDamage() {
-        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("EnemyHazard"))) {
+        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("EnemyHazard", "Hazards"))) {
            // GetComponent<Rigidbody2D>().velocity = deathKick;
            AudioSource.PlayClipAtPoint(deathSound, transform.position);
            FindObjectOfType<EnemyMovement>().StopMovement();

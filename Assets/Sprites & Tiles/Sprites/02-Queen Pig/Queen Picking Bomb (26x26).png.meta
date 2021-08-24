@@ -1,55 +1,19 @@
 fileFormatVersion: 2
-guid: 6125c805a383c4b4b80bf661e67c3d52
+guid: c6022945d945c854e8c7fdd245b19635
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7063903929861715703
-    second: Run (78x58)_0
+      213: -3694567054480661663
+    second: Queen Picking Bomb (26x26)_0
   - first:
-      213: 8626773255784356531
-    second: Run (78x58)_1
+      213: 6103631900988375333
+    second: Queen Picking Bomb (26x26)_1
   - first:
-      213: -5795003117160629848
-    second: Run (78x58)_2
+      213: -365458935904142683
+    second: Queen Picking Bomb (26x26)_2
   - first:
-      213: 3561249728323253878
-    second: Run (78x58)_3
-  - first:
-      213: 3822881148397469178
-    second: Run (78x58)_4
-  - first:
-      213: 6879179259501797737
-    second: Run (78x58)_5
-  - first:
-      213: 1277852240713749110
-    second: Run (78x58)_6
-  - first:
-      213: -6436722398084169495
-    second: Run (78x58)_7
-  - first:
-      213: 2071870128200977166
-    second: Run (78x58)_0
-  - first:
-      213: -4877606676711759832
-    second: Run (78x58)_1
-  - first:
-      213: 7309898724688504874
-    second: Run (78x58)_2
-  - first:
-      213: -6204779324376147860
-    second: Run (78x58)_3
-  - first:
-      213: -8417744454416355811
-    second: Run (78x58)_4
-  - first:
-      213: -7387278603246833082
-    second: Run (78x58)_5
-  - first:
-      213: -5263922922914856929
-    second: Run (78x58)_6
-  - first:
-      213: 273259141869165650
-    second: Run (78x58)_7
+      213: -8851788788027442284
+    second: Queen Picking Bomb (26x26)_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -93,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 15
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -159,169 +123,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Run (78x58)_0
+      name: Queen Picking Bomb (26x26)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 78
-        height: 58
-      alignment: 9
-      pivot: {x: 0.42, y: 0.5}
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0b892487e2c0cc10800000000000000
-      internalID: 2071870128200977166
+      spriteID: 163a1dea6d24abcc0800000000000000
+      internalID: -3694567054480661663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run (78x58)_1
+      name: Queen Picking Bomb (26x26)_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 0
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521872220e474b450800000000000000
+      internalID: 6103631900988375333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen Picking Bomb (26x26)_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aaf079b801adeaf0800000000000000
+      internalID: -365458935904142683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen Picking Bomb (26x26)_3
       rect:
         serializedVersion: 2
         x: 78
         y: 0
-        width: 78
-        height: 58
-      alignment: 9
-      pivot: {x: 0.42, y: 0.5}
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 820a588f1924f4cb0800000000000000
-      internalID: -4877606676711759832
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run (78x58)_2
-      rect:
-        serializedVersion: 2
-        x: 156
-        y: 0
-        width: 78
-        height: 58
-      alignment: 9
-      pivot: {x: 0.42, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a28a32d192af17560800000000000000
-      internalID: 7309898724688504874
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run (78x58)_3
-      rect:
-        serializedVersion: 2
-        x: 234
-        y: 0
-        width: 78
-        height: 58
-      alignment: 9
-      pivot: {x: 0.42, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c681fdc241234e9a0800000000000000
-      internalID: -6204779324376147860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run (78x58)_4
-      rect:
-        serializedVersion: 2
-        x: 312
-        y: 0
-        width: 78
-        height: 58
-      alignment: 9
-      pivot: {x: 0.42, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1eaf70940a2e2b80800000000000000
-      internalID: -8417744454416355811
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run (78x58)_5
-      rect:
-        serializedVersion: 2
-        x: 390
-        y: 0
-        width: 78
-        height: 58
-      alignment: 9
-      pivot: {x: 0.42, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 642f0a4ff3d1b7990800000000000000
-      internalID: -7387278603246833082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run (78x58)_6
-      rect:
-        serializedVersion: 2
-        x: 468
-        y: 0
-        width: 78
-        height: 58
-      alignment: 9
-      pivot: {x: 0.42, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f10cf96bdf9c2f6b0800000000000000
-      internalID: -5263922922914856929
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run (78x58)_7
-      rect:
-        serializedVersion: 2
-        x: 546
-        y: 0
-        width: 78
-        height: 58
-      alignment: 9
-      pivot: {x: 0.42, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 25c5db2edbfcac300800000000000000
-      internalID: 273259141869165650
+      spriteID: 49bb6defef0282580800000000000000
+      internalID: -8851788788027442284
       vertices: []
       indices: 
       edges: []

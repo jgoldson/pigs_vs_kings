@@ -61,9 +61,10 @@ GameObject:
   - component: {fileID: 506447145}
   - component: {fileID: 506447144}
   - component: {fileID: 506447146}
+  - component: {fileID: 6869252069114745740}
   m_Layer: 0
   m_Name: Bomb
-  m_TagString: Untagged
+  m_TagString: Bomb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -165,14 +166,14 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 5
-  m_LinearDrag: 0
+  m_Mass: 20
+  m_LinearDrag: 0.5
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: b7a142b46a887d244bf2e823c1a6ba3a, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!58 &506447144
 CircleCollider2D:
@@ -203,3 +204,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeUntilExplode: 3
+  isLit: 1
+--- !u!58 &6869252069114745740
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7161286601189151205}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.19083071}
+  serializedVersion: 2
+  m_Radius: 0.6779146

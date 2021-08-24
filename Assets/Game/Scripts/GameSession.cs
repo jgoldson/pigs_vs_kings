@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,6 +14,9 @@ public class GameSession : MonoBehaviour
     [SerializeField] Image heart3;
 
     [SerializeField] Text scoreText;
+
+    [SerializeField] int pointsForExtraHeart = 500;
+    
 
 
     private void Awake() {
@@ -69,7 +72,7 @@ public class GameSession : MonoBehaviour
         playerLives++;
         UpdateHeartBar();
         } else {
-            AddToScore(500);
+            AddToScore(pointsForExtraHeart);
         }
     }
 

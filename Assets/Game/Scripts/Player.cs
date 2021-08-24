@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     //State
     bool canMove = true;
     bool hasCrate = false;
+    bool hasBomb = false;
     bool canPickUp = false;
     
     //Cached References
@@ -28,6 +29,8 @@ public class Player : MonoBehaviour
     CapsuleCollider2D myBodyCollider;
     BoxCollider2D myFeet;
     GameObject crate;
+    GameObject bomb;
+    int objectToPickup;
 
     void Start()
     {
@@ -45,7 +48,7 @@ public class Player : MonoBehaviour
         FlipSprite();
         Jump();
         Die();
-        TryToThrowCrate();
+        TryToThrowObject();
         PickUpObject();
     }
 
@@ -96,10 +99,18 @@ public class Player : MonoBehaviour
     private void PickUpObject(){
         if (!canPickUp) {return;}
         if (CrossPlatformInputManager.GetButtonDown("Fire1")){
+            if (objectToPickup == 1){
             hasCrate = true;
             GetComponent<Animator>().SetTrigger("PickUpCrate");
             crate.SetActive(false);
          }
+         else if (objectToPickup == 2){
+            hasBomb = true;
+            GetComponent<Animator>().SetTrigger("PickUpBomb");
+            bomb.SetActive(false);
+        }
+        }
+
          
     }
 
@@ -107,7 +118,14 @@ public class Player : MonoBehaviour
         if (other.CompareTag("Crate")){
             crate = other.gameObject;
             canPickUp = true;
+            objectToPickup = 1; //1 is crate
         }
+        if (other.CompareTag("Bomb")){
+            bomb = other.gameObject;
+            canPickUp = true;
+            objectToPickup = 2; //2 is bomb
+        }
+        
     }
     private void OnTriggerExit2D(Collider2D other) {
         if (other.CompareTag("Crate")) {
@@ -115,27 +133,44 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void TryToThrowCrate(){
-        if (!hasCrate) { return;}
+    private void TryToThrowObject(){
+        if (!(hasCrate | hasBomb)) { return;}
         if (CrossPlatformInputManager.GetButtonDown("Fire1")) {
-            StartCoroutine(ThrowCrate());
+            StartCoroutine(ThrowObject());
         }
     }
-    IEnumerator ThrowCrate() {
+    IEnumerator ThrowObject() {
         yield return new WaitForSeconds(0.1f);
+        if (hasCrate){
         GetComponent<Animator>().SetTrigger("ThrowCrate");
             GameObject newCrate = Instantiate(
             crate, crown.transform.position, transform.rotation) as GameObject;
             newCrate.SetActive(true);
             newCrate.layer = 17;
-            Debug.Log(newCrate.layer);
+            
             
             newCrate.GetComponent<Rigidbody2D>().velocity = 
                 new Vector2(myRigidBody.velocity.x + (crateThrowSpeed * playerDirection),
                 myRigidBody.velocity.y + crateThrowSpeed);
             Destroy(crate);
             hasCrate = false;
+        }
+        if (hasBomb){
+            GetComponent<Animator>().SetTrigger("ThrowBomb");
+            GameObject newBomb = Instantiate(
+            bomb, crown.transform.position, transform.rotation) as GameObject;
+            newBomb.SetActive(true);
+            //newBomb.layer = 17;
+            newBomb.GetComponent<Bomb>().lightBomb();
+            
+            newBomb.GetComponent<Rigidbody2D>().velocity = 
+                new Vector2(myRigidBody.velocity.x + (crateThrowSpeed * playerDirection),
+                myRigidBody.velocity.y + crateThrowSpeed);
+            Destroy(bomb);
+            hasBomb = false;
+        }
     }
+
 
     public void StopPlayerMovement() {
         canMove = false;

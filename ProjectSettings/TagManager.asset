@@ -7,6 +7,8 @@ TagManager:
   - Shootable
   - Crate
   - Ground
+  - Bomb
+  - Wall
   layers:
   - Default
   - TransparentFX
