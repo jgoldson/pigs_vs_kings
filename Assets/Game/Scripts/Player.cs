@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject crown;
     [SerializeField] float crateThrowSpeed = 10f;
     [SerializeField] AudioClip deathSound;
+    [SerializeField] Cannon cannonToFire;
     float playerDirection = 1;
 
 
@@ -125,10 +126,19 @@ public class Player : MonoBehaviour
             canPickUp = true;
             objectToPickup = 2; //2 is bomb
         }
+        if (other.CompareTag("Cannon")){
+            if(hasBomb){
+                if(!cannonToFire){return;}
+                StartCoroutine(TryToFireCannon());
+            }
+        }
         
     }
     private void OnTriggerExit2D(Collider2D other) {
         if (other.CompareTag("Crate")) {
+            canPickUp = false;
+        }
+        if (other.CompareTag("Bomb")) {
             canPickUp = false;
         }
     }
@@ -169,6 +179,17 @@ public class Player : MonoBehaviour
             Destroy(bomb);
             hasBomb = false;
         }
+    }
+
+     IEnumerator TryToFireCannon() {
+        Destroy(bomb);
+        hasBomb = false;
+        yield return new WaitForSeconds(0.1f);
+        
+        GetComponent<Animator>().SetTrigger("ThrowBomb");
+        
+        cannonToFire.FireOnce();
+
     }
 
 

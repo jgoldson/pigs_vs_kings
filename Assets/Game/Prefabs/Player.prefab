@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1c5efd63d231e64a91c524b8ab54bba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 4
+  runSpeed: 5
   jumpSpeed: 12
   horizontalJumpModifier: -2
   deathKick: {x: 0, y: 10}
@@ -143,6 +143,7 @@ MonoBehaviour:
   crown: {fileID: 103711475}
   crateThrowSpeed: 8
   deathSound: {fileID: 8300000, guid: bfddb25354aeede42abb89f6af256851, type: 3}
+  cannonToFire: {fileID: 0}
 --- !u!61 &1741791315
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -246,7 +247,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.18, y: 0.17}
+  m_Size: {x: 1.8095238, y: 1.3333334}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7d806f33d8820a40ad4bc71269f1af1, type: 3}
-  m_Name: DialogueClimbTheTower
+  m_Name: CannonIntro
   m_EditorClassIdentifier: 
   nodes:
-  - speaker: King Larry
-    text: Ha! You'll never be able to climb this tower without any stairs!
   - speaker: Princess Piggy
-    text: Thats a long way up....
+    text: Where are all these explosions coming from??
+  - speaker: Blu
+    text: It looks like the king has brought out the heavy artillery, be careful!

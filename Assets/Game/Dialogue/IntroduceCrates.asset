@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7d806f33d8820a40ad4bc71269f1af1, type: 3}
-  m_Name: DialogueClimbTheTower
+  m_Name: IntroduceCrates
   m_EditorClassIdentifier: 
   nodes:
-  - speaker: King Larry
-    text: Ha! You'll never be able to climb this tower without any stairs!
-  - speaker: Princess Piggy
-    text: Thats a long way up....
+  - speaker: Blu
+    text: Some objects can be picked up and thrown
+  - speaker: Blu
+    text: Try going next to one of these crates and pressing the interact button.
+      Then press again to throw the crate.
+  - speaker: Blu
+    text: If you hit an enemy it can do some serious damage!

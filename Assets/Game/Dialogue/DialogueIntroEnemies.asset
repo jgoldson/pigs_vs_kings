@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: DialogueIntroEnemies
   m_EditorClassIdentifier: 
   nodes:
-  - speaker: Queen Piggy
+  - speaker: Princess Piggy
     text: Ew what are those green things? They look dangerous
+  - speaker: Blu
+    text: Be careful of those slimes, they are made of acid and will seriously hurt
+      if you touch them!

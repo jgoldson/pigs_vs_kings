@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - Bomb
   - Wall
+  - Cannon
   layers:
   - Default
   - TransparentFX

@@ -14,4 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - speaker: ??
-    text: Ill Set you free!
+    text: Well looks like you got yourself in a bit of a bind
+  - speaker: ??
+    text: Let me help you out there
+  - speaker: Princess Piggy
+    text: Thank you stranger, but why are you helping me?
+  - speaker: ??
+    text: I cant stand how he goes around capturing princesses! Its so medieval
+  - speaker: Blu
+    text: You can call me Blu by the way, let me help you get out of here
+  - speaker: Blu
+    text: Lets head out through that door over there, you'll need to first jump out
+      of this cage

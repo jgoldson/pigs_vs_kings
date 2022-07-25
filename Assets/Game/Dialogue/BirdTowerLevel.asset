@@ -10,10 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7d806f33d8820a40ad4bc71269f1af1, type: 3}
-  m_Name: DialogueClimbTheTower
+  m_Name: BirdTowerLevel
   m_EditorClassIdentifier: 
   nodes:
-  - speaker: King Larry
-    text: Ha! You'll never be able to climb this tower without any stairs!
-  - speaker: Princess Piggy
-    text: Thats a long way up....
+  - speaker: Blu
+    text: Hey! I found the door we need but it doesnt look like you'll be able to
+      make it unless you sprout wings
+  - speaker: Blu
+    text: The king has destroyed the stairs but there are still some old beams you
+      can use, just watch your step!
+  - speaker: Blu
+    text: And don't forget the key

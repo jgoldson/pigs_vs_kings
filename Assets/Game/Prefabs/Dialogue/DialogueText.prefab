@@ -112,8 +112,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -42.399994, y: 10.6119995}
-  m_SizeDelta: {x: -181.63107, y: -21.121574}
+  m_AnchoredPosition: {x: 5.799988, y: 0.025650024}
+  m_SizeDelta: {x: -48.415466, y: 0.05114746}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5193217190581945782
 CanvasRenderer:
@@ -143,9 +143,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 9c61f4c7928db6a4fb5e34d7be99c139, type: 3}
+    m_Font: {fileID: 12800000, guid: b579203d23de7ef4191ef459846cb3c4, type: 3}
     m_FontSize: 50
-    m_FontStyle: 0
+    m_FontStyle: 2
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 50
@@ -165,6 +165,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5193217190797746540}
+  - component: {fileID: 383082474}
   m_Layer: 5
   m_Name: DialogueText
   m_TagString: Untagged
@@ -193,6 +194,24 @@ RectTransform:
   m_AnchoredPosition: {x: 3.1, y: -124.8}
   m_SizeDelta: {x: 476.41626, y: 349.528}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &383082474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5193217190797746541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9892b2cb6d266ee4da909db0422e9e63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 0}
+  SpeakerText: {fileID: 5193217190581945783}
+  DialogueText: {fileID: 5193217190954826701}
+  kingIsHere: 0
+  TowerLevel: 0
+  typeDelay: 0.02
 --- !u!1 &5193217190954826703
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,7 +289,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Oh no how will I ever escape this castle
+  m_Text: 'Error: Dialogue not set in dialogue group'
 --- !u!1 &5193217191004160830
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,9 +325,9 @@ RectTransform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.5002441, y: -56.3}
-  m_SizeDelta: {x: -57.322754, y: -151.32555}
+  m_AnchorMax: {x: 1, y: 0.62600005}
+  m_AnchoredPosition: {x: 1.5002441, y: 6.1999817}
+  m_SizeDelta: {x: -57.322754, y: -26.325546}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5193217191004160803
 CanvasRenderer:
@@ -331,7 +350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.9411765}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -382,7 +401,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.66800004}
   m_AnchorMax: {x: 0.37856302, y: 1}
-  m_AnchoredPosition: {x: -59.599976, y: -15.099998}
+  m_AnchoredPosition: {x: -59.600098, y: -15.100006}
   m_SizeDelta: {x: -179.586, y: -24.89801}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5193217191928577599
@@ -406,7 +425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.9411765}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:

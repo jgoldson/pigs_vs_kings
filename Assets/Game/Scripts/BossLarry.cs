@@ -17,6 +17,9 @@ public class BossLarry : MonoBehaviour
     float playerDirection = 1;
     [SerializeField] float distanceFromPlayerToChase = 4f;
     [SerializeField] float timeToStopMoving = 4f;
+    bool attacking = false;
+    [SerializeField] float timeBetweenAttacks = 3f;
+    [SerializeField] GameObject key;
 
     void Start()
     {
@@ -60,12 +63,12 @@ public class BossLarry : MonoBehaviour
     }
     public void StandardAttack(){
                 GetComponent<Animator>().SetTrigger("Attack");
-                timeToAttack = Random.Range(1f, 3f);
+                timeToAttack = Random.Range(0.5f, timeBetweenAttacks);
                 canMove = true;
     }
     public void StopAndAttack(){
                 GetComponent<Animator>().SetTrigger("Attack");
-                timeToAttack = 5f;
+                timeToAttack = timeBetweenAttacks + 2f;
                 canMove = false;
     }
     
@@ -103,13 +106,16 @@ public class BossLarry : MonoBehaviour
     }
     public void turnOnHammerCollider(){
         myHammerCollider.enabled = true;
+        attacking = true;
     }
     public void turnOffHammerCollider(){
         myHammerCollider.enabled = false;
+        attacking = false;
     }
 
     private void WatchForDamage() {
         if (takingDamage){return;}
+        if(attacking){return;}
         if (myRigidBody.IsTouchingLayers(LayerMask.GetMask("EnemyHazard", "Hazards"))) {
             takingDamage = true;
            
@@ -123,17 +129,20 @@ public class BossLarry : MonoBehaviour
         
      }
      IEnumerator takeDamage(){
-         
-         yield return new WaitForSeconds(1);
-         health -= 1;
+        timeToAttack = 2f;
+        yield return new WaitForSeconds(1);
+        health -= 1;
         if (health <= 0) {
-                BossDies();
-            }
+            BossDies();
+        }
          canMove = true;
          takingDamage = false;
      }
      public void BossDies(){
          FindObjectOfType<GameSession>().AddToScore(pointsForKillingEnemy);
+         
          Destroy(gameObject);
+        GameObject newKey = Instantiate(
+            key, transform.position, transform.rotation) as GameObject;
      }
 }

@@ -34,7 +34,18 @@ public class Cannon : MonoBehaviour
         newProjectile.transform.parent = gameObject.transform;
     }
 
+    public void FireOnce() {
+        AudioSource.PlayClipAtPoint(cannonSound, transform.position);
+        GameObject newProjectile = Instantiate(
+            projectile, gun.transform.position, transform.rotation) as GameObject;
+        newProjectile.transform.parent = gameObject.transform;
+    }
+
     public float CannonDirection() {
         return Mathf.Sign(gameObject.transform.localScale.x);
+    }
+
+    public void TurnOnCannon() {
+        gameObject.SetActive(true);
     }
 }

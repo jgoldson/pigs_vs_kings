@@ -11,6 +11,7 @@ public class DialogueControl : MonoBehaviour
     [SerializeField] Dialogue dialogue;
     [SerializeField] Text SpeakerText, DialogueText;
     [SerializeField] bool kingIsHere = false;
+    [SerializeField] bool TowerLevel = false;
 
     Player player;
     Cage cage;
@@ -47,6 +48,9 @@ public class DialogueControl : MonoBehaviour
         }
         if (kingIsHere) {
             FindObjectOfType<KingLarry>().KingOutro();
+        }
+        if (TowerLevel){
+            FindObjectOfType<Bird>().TowerLevel();
         }
         player.AllowPlayerMovement();
         gameObject.SetActive(false);

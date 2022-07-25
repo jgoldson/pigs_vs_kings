@@ -107,10 +107,12 @@ public class GameSession : MonoBehaviour
     }
     public void SetScore(int savedScore){
         score = savedScore;
+        if (!scoreText){return;}
         scoreText.text = score.ToString();
     }
     public void LoadGameStats(){
         score = PlayerPrefs.GetInt("SavedScore");
+        if (!scoreText){return;}
         scoreText.text = score.ToString();
         playerLives = PlayerPrefs.GetInt("SavedLives");
         UpdateHeartBar();

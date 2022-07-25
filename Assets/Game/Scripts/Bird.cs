@@ -51,5 +51,9 @@ public class Bird : MonoBehaviour
             cage.Open();
         }
     }
+
+    public void TowerLevel() {
+        gameObject.GetComponent<Animator>().SetTrigger("TowerLevel");
+    }
 }
 

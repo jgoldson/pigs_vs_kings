@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - speaker: King Larry
-    text: You are mine forever there is no escape!
-  - speaker: Queen Piggy
-    text: Oh No how will I ever escape this dungeon?
+    text: 'I have finally captured you princess piggy! '
+  - speaker: King Larry
+    text: Now that I have you, its time for me to prepare our wedding!
+  - speaker: Princess Piggy
+    text: Ew I will never marry you Larry!
